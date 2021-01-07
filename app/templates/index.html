@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title text-center">
+  Hackathons in the 10 biggest Georgia cities!
+</h1>
+<h4 class="subtitle text-center">
+ - Weather conditions tracked using openweathermap.org api -
+</h4> 
+<h4 class="subtitle text-center">
+ - Look in the nav bar for randomly generated fun facts about hackathons! -
+</h4> 
+
+<div class="card-deck">
+{% for event in detailed_events %}
+<div class="col-lg col-lg-4" >
+	<div class="card bg-warning text-center">
+		<div class="card-body">
+			<img src="{{ event.event_weather_visual }}" width="250" height="250">
+			<h5 class="card-title">{{ event.event_title }}</h5>
+			<h6 class="card-subtitle">{{ event.event_location_city }}, GA</h6>
+			<p class="card-text">{{ event.event_date }} @ {{ event.event_time}} <br> Hosted by: {{ event.event_organizer }} <br> 
+			Weather conditions: {{ event.event_weather_condition }} <br>
+			Description: {{ event.event_weather_description }}
+			</p>
+		</div>
+	</div>
+</div>
+{% endfor %}
+</div>
+
+{% endblock %}

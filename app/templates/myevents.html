@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title text-center">
+  Welcome, {{ name }}!
+</h1>
+<h2 class="subtitle text-center">
+  all of your added events:
+</h2>
+      <a href="{{ url_for('main.add_events_form') }}" class="btn btn-primary btn-block" role="button">Click here to create a new event</a>
+<div class="card-deck">
+{% for event in detailed_my_events %}
+	<div class="card bg-warning text-center">
+		<div class="card-body">
+			<h5 class="card-title">{{ event.my_event_title }}</h5>
+			<h6 class="card-subtitle">{{ event.my_event_location_city }}, GA</h6>
+			<p class="card-text">{{ event.my_event_date }} @ {{ event.my_event_time}}</p>
+			<form action="{{ url_for('main.delete_event')}}" method="post">
+				<input type="hidden" value="{{ event.my_event_title }}" name="name">
+				<input type="submit" class="btn btn-info bg-danger" value="delete">
+			</form>
+		</div>
+	</div>
+{% endfor %}
+</div>
+{% endblock %}

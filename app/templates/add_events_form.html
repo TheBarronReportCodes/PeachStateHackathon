@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+    <h1>Add Event</h1>
+    
+    {% with messages = get_flashed_messages() %}
+		{% if messages %}
+				<div class="error">
+					{{ messages[0] }}
+				</div>
+		{% endif %} 
+	{% endwith %}
+		
+    <form method="POST" action="{{ url_for('main.add_events') }}">
+		<div class="form-group">
+        	<label>Name:</label>
+        	<input class="form-control" type="text" name="name" />
+        </div>
+
+		<div class="form-group">
+        	<label>Date:</label>
+        	<input class="form-control" type="date" name="date" min="2020-04-21" max="2021-01-01" />
+        </div>
+
+		<div class="form-group">
+        	<label>Time (Military):</label>
+        	<input class="form-control" type="number" name="hour" min="0" max="23" /> :
+        	<input class="form-control" type="number" name="minutes" min="0" max="60" />
+		</div>
+		
+		<div class="form-group">
+        	<label>Location:</label>
+        	<select class="form-control" type="text" name="location" >
+        	{% for location in locations %}
+        		<option value="{{ location.city_id }}">
+        			{{ location.city }}
+        		</option>
+        	{% endfor %}
+        	</select>
+		</div>
+		
+		<div class="form-group">
+        	<input type="submit" class="btn btn-info bg-info" value="Add Event" />
+        	<input type="reset" class="btn btn-info bg-info" />
+        	<br>
+        </div>
+    </form>
+    <p class="last_paragraph">
+        <a href="{{ url_for('main.index') }} " class="btn btn-info bg-info">View Events List</a>
+    </p>
+</main>
+{% endblock %}
