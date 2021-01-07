@@ -1,0 +1,45 @@
+{
+	"funfacts": [
+		{
+			"number": 1,
+			"fact": "The term hacking really just means working with code!"
+		},
+		{
+			"number": 2,
+			"fact": "You dont have to know how to code! Some hackathon teams consist of sound engineers or graphic designers"
+		},
+		{
+			"number": 3,
+			"fact": "Hackathons are long: Taking anywhere from a day to a weekend. Crazy!"
+		},
+		{
+			"number": 4,
+			"fact": "Hackathons are a great way to tap into social circles and meet new people!"
+		},
+		{
+			"number": 5,
+			"fact": "Some companies attend hackathons to hire programmers!"
+		},
+		{
+			"number": 6,
+			"fact": "Twitter was born from a hackathon"
+		},
+		{
+			"number": 7,
+			"fact": "PennApps at UPenn was the first student-run college hackathon; in 2015 it became the largest college hackathon, hosting over 2000 people and offering over $60k in prizes"
+		},
+		{
+			"number": 8,
+			"fact": "Starting in 2012, NASA has been annually hosting the International Space Apps Challenge."
+		},
+		{
+			"number": 9,
+			"fact": "The term hackathon was first used around 1999 at Sun Microsystems to refer to programmers there writing a program for Java!"
+		},
+		{
+			"number": 10,
+			"fact": "The 2013 hackathon by Saleforce.com had a payout of $1 million to the winners, billed as the largest-ever prize!"
+		}
+
+	]
+}

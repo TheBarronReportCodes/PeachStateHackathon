@@ -1,0 +1,54 @@
+{
+	"locations": [
+		{
+			"city": "Atlanta",
+			"state": "ga",
+			"city_id": "4180439"
+		},
+		{
+			"city": "Augusta",
+			"state": "ga",
+			"city_id": "4957003"
+		},
+		{
+			"city": "Columbus",
+			"state": "ga",
+			"city_id": "4188985"
+		},
+		{
+			"city": "Macon",
+			"state": "ga",
+			"city_id": "4207400"
+		},
+		{
+			"city": "Savannah",
+			"state": "ga",
+			"city_id": "4221552"
+		},
+		{
+			"city": "Stone Mountain",
+			"state": "ga",
+			"city_id": "4224745"
+		},
+		{
+			"city": "Sandy Springs",
+			"state": "ga",
+			"city_id": "4569313"
+		},
+		{
+			"city": "Lagrange",
+			"state": "ga",
+			"city_id": "4204230"
+		},
+		{
+			"city": "Valdosta",
+			"state": "ga",
+			"city_id": "4228147"
+		},
+		{
+			"city": "Roswell",
+			"state": "ga",
+			"city_id": "5488441"
+		}
+	]
+}
