@@ -1,4 +1,6 @@
 # PeachStateHackathon
+SIGN IN: emailAddress: employer@company.me ; password: employer@company.me
+
 Database-driven Python web application that displays hackathons occurring in the ten largest Georgia cities
 
 ###Task
